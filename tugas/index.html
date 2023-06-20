@@ -3,10 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temperature Conversion</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <h1>hello world</h1>
+    <div class="container">
+        <header>
+            <h1>Temperature Conversion</h1>
+        </header>
+        
+        <main>
+            <form action="">
+                <section class="Input_Section_Celcius">
+                    <label for="celcius">Celcius (<sup>o</sup>C): </label>
+                    <input type="number" id="celcius" required>
+                </section>
+
+                <section class="Button_Section_Celcius">
+                    <button type="submit">Conversion</button>
+                    <button type="reset">Reset</button>
+                    <button type="">Reverse</button>
+                </section>
+
+                <section class="Input_Section_Fahrenheit">
+                    <label for="Fahrenheit">Fahrenheit (<sup>o</sup>F): </label>
+                    <input type="number" id="fahrenheit" readonly>
+                </section>
+
+                <section class="Section_Cara_Kalkulasi">
+                    <label for="cara_kalkulasi">How to Conversion: </label>
+                    <textarea name="cara_kalkulasi" id="cara_kalkulasi" readonly>
+                    </textarea>
+                </section>
+            </form>
+
+            <section class="explain_formula">
+                <a href="">Fahrenheit to Celcius</a>
+                <h3> How To Convert Form Celcius (<sup>o</sup>C) To Fahrenheit (<sup>o</sup>F) </h3>
+
+                <hr>
+
+                <p>The temperature in degrees Fahrenheit is equal to the temperature in degrees Celsius times 9/5 plus 32.</p>
+            </section>
+
+            <section class="formula">
+                <p>
+                    S(<sub><sup>o</sup>F</sub>) = (S(<sub><sup>o</sup>C</sub>) × 9/5) + 32
+                </p>
+
+                <p style="font-weight: bolder;">or</p>
+
+                <p>
+                    S(<sub><sup>o</sup>F</sub>) = (S(<sub><sup>o</sup>C</sub>) × 1.8) + 32
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                <small>&copy;2023 wahyuwahidnugroho256@gmail.com</small>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
